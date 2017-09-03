@@ -4,7 +4,7 @@ import ResultTitle from '../../src/js/components/ResultTitle';
 
 describe('ResultTitle', () => {
   it('renders with a title', () => {
-    const component = shallow(<ResultTitle title="test" />);
-    expect(component).toHaveLength(1);
+    const wrapper = shallow(<ResultTitle title="Test title" />);
+    expect(wrapper.find('li').text()).toBe("Test title");
   });
 });

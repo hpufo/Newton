@@ -3,7 +3,7 @@
   padding: 0;
 }
 
-#app{
+#formDiv, ul{
   width: fit-content;
 }
 
@@ -18,4 +18,10 @@ h2{
 input[type="submit"]{
   display: block;
   margin: auto;
+}
+
+li{
+  &:nth-child(odd){
+    background-color: azure;
+  }
 }

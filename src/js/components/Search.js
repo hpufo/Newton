@@ -43,7 +43,6 @@ export default class Search extends React.Component {
   }
   renderResults(){
     if(this.state.results.length > 0){
-      console.log(this.state.results);
       return this.state.results.map((item, index) => {
         return <ResultTitle title={item} key={index} />;
       });
@@ -52,11 +51,13 @@ export default class Search extends React.Component {
   render() {
     return (
       <div>
-        <h2>Search</h2>
-        <form onSubmit={this.onSubmit}>
-          <input type="text"  id="search" onChange={this.onTextChange} />
-          <input type="submit" value="Submit" />
-        </form>
+        <div id="formDiv">
+          <h2>Search</h2>
+          <form onSubmit={this.onSubmit}>
+            <input type="text"  id="search" onChange={this.onTextChange} />
+            <input type="submit" id="btn" value="Submit" />
+          </form>
+        </div>
         {this.displayMessage()}
         <ul>
           {this.renderResults()}
