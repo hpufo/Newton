@@ -29,7 +29,10 @@ export default class Search extends React.Component {
       $('.r').each((i,element) => {
         results.push(element.children[0].children[0].data);
       });
-      this.setState({results: results, message: ''});
+      if(results.length === 0)
+        this.setState({message: 'No results found'});
+      else
+        this.setState({results: results, message: ''});
     })
     .catch((error) => this.setState({message: "An error occured"}));
   }
@@ -43,7 +46,7 @@ export default class Search extends React.Component {
       console.log(this.state.results);
       return this.state.results.map((item, index) => {
         return <ResultTitle title={item} key={index} />;
-      });//*/
+      });
     }
   }
   render() {
@@ -55,7 +58,9 @@ export default class Search extends React.Component {
           <input type="submit" value="Submit" />
         </form>
         {this.displayMessage()}
-        {this.renderResults()}
+        <ul>
+          {this.renderResults()}
+        </ul>
       </div>
     );
   }
