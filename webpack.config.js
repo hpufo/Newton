@@ -30,7 +30,7 @@ module.exports = {
     ]
   },
   output: {
-    path: __dirname + "/build/",
+    path: __dirname + "/ChromeExt/",
     filename: "app.min.js"
   },
   plugins: debug ? [] : [

@@ -2,3 +2,20 @@
   margin: 0;
   padding: 0;
 }
+
+#app{
+  width: fit-content;
+}
+
+h2{
+  text-align: center;
+}
+
+#search{
+  display: block;
+}
+
+input[type="submit"]{
+  display: block;
+  margin: auto;
+}

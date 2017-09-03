@@ -31,14 +31,14 @@ export default class Search extends React.Component {
       });
       if(results.length === 0)
         this.setState({message: 'No results found'});
-      else
-        this.setState({results: results, message: ''});
+      else  //Sucess
+        this.setState({results: results, message: 'Results:'});
     })
     .catch((error) => this.setState({message: "An error occured"}));
   }
   displayMessage(){
     if(this.state.message){
-      return <h3>{this.state.message}</h3>;
+      return <h3 id="msg">{this.state.message}</h3>;
     }
   }
   renderResults(){
@@ -54,7 +54,7 @@ export default class Search extends React.Component {
       <div>
         <h2>Search</h2>
         <form onSubmit={this.onSubmit}>
-          <input type="text" onChange={this.onTextChange} />
+          <input type="text"  id="search" onChange={this.onTextChange} />
           <input type="submit" value="Submit" />
         </form>
         {this.displayMessage()}
