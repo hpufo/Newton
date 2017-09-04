@@ -1,5 +1,5 @@
 {
-  "name": "newton-x",
+  "name": "newton",
   "version": "0.0.0",
   "description": "Code challenge from NewtonX",
   "main": "webpack.config.js",

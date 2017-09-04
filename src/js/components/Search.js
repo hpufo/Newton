@@ -25,7 +25,7 @@ export default class Search extends React.Component {
     event.preventDefault();
     // Got past CORS with this: https://github.com/messier31/cors-proxy-server
     const query = encodeURIComponent(this.state.inputText);
-    const url = 'https://secret-ocean-49799.herokuapp.com/https://www.google.com/search?q='+query;
+    const url = 'https://cors-proxy-server.herokuapp.com/https://www.google.com/search?q='+query;
 
     this.setState({message: 'Loading...'});
     //Get the html from google search using axios
