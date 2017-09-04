@@ -1,5 +1,5 @@
-# CampaignViewer
-Programming challenge for MediaMath. I created a Campaign Viewer using their sample API. To do this I used React/Redux.
+# Newton
+Programming challenge for NewtonX. I created a react chrome extension that allows users to enter a query in which the app returns a list of the results scraped from google search. 
 
 Usefull commands:
 
