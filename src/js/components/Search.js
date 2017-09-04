@@ -34,8 +34,8 @@ export default class Search extends React.Component {
       const $ = cheerio.load(response.data);
       let results = [];
       //Loop through each result item from google, and add it's title to the results array
-      $('.r').each((i,element) => {
-        results.push(element.children[0].children[0].data);
+      $('.r a').each((i,element) => {
+        results.push(element.children[0].data);
       });
       //Display an message if there are no results, else update the state with the results
       if(results.length === 0)

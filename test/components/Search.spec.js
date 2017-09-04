@@ -7,7 +7,9 @@ const testResults = ["Test title 1","Test title 2","Test title 3"];
 describe('Search', () => {
   it('renders without a problem', () => {
     const wrapper = shallow(<Search />);
+    expect(wrapper.find('h2')).toBeTruthy();
     expect(wrapper.find('#search')).toBeTruthy();
+    expect(wrapper.find('h2')).toBeTruthy();
   });
   it('renders 3 search results',() => {
     const wrapper = mount(<Search />)
