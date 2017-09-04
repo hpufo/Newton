@@ -11,6 +11,6 @@ For Chrome Extension:
 
 Run a production build with(Install webpack gloablly first): "webpack -p"
 
-Go to chrome://extensions in chrome
+Go to "chrome://extensions" in chrome
 
 Then click "Load unpacked extensions" then navigate to the ChromeExt folder.
