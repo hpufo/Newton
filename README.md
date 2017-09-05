@@ -7,9 +7,9 @@ To install depenencies: "npm install"
 
 To run dev server: "npm start" or "npm run dev"
 
-For Chrome Extension:
+To build production: "webpack"
 
-Run a production build with(Install webpack gloablly first): "webpack -p"
+For Chrome Extension:
 
 Go to "chrome://extensions" in chrome
 
